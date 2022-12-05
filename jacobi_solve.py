@@ -1,10 +1,5 @@
 import math
 
-J1 = (-1,3)
-J1 = (401, 505)
-J2 = (187, 323)
-J3 = (1039, 2031)
-
 def twosym(j):
     J = pow(-1, (pow(j[1], 2)-1)/8)
     return J
@@ -78,7 +73,3 @@ def jacobiEval(j):
                 if (type(J) != float and type(J) != int and list(J) != list(j)):    print (m[1],":", J)
                 j = J
     return j
-        
-print(jacobiEval(J1))
-print(jacobiEval(J2))
-print(jacobiEval(J3))
